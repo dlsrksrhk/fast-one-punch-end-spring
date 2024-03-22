@@ -1,7 +1,14 @@
 package com.fastcampus;
 
+import com.fastcampus.logic.BubbleSort;
+import com.fastcampus.logic.Sort;
+
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Sort<String> sort = new BubbleSort<String>();
+
+        System.out.println(sort.sort(Arrays.asList(args)));
     }
 }
